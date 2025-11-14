@@ -45,3 +45,8 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     height: 100%;
 }
+
+.tasks-column {
+    display: flex;
+    flex-direction: column;
+}
