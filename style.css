@@ -25,3 +25,12 @@ body {
     display: flex;
     height: calc(100vh - 67px); /* Subtract header height  */
 }
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    overflow: hidden;
+}
