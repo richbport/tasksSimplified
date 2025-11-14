@@ -26,6 +26,7 @@ body {
     height: calc(100vh - 67px); /* Subtract header height  */
 }
 
+/* Main content styles */
 .main-content {
     flex-grow: 1;
     padding: 20px;
