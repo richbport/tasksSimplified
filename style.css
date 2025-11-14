@@ -18,3 +18,10 @@ body {
     background-color: rgb(25, 25, 25);
     color: white;
 }
+
+/* Main layout  */
+
+.container {
+    display: flex;
+    height: calc(100vh - 67px); /* Subtract header height  */
+}
