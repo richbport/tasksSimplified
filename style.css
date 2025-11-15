@@ -64,3 +64,10 @@ header {
     background-color: rgb(4, 9, 29);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
