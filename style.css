@@ -71,3 +71,8 @@ header {
     display: flex;
     align-items: center;
 }
+
+.logo img {
+    height: 32px;
+    margin-right: 10px;
+}
