@@ -107,3 +107,11 @@ header {
     align-items: center;
     justify-content: center;
 }
+
+.date-display {
+    text-align: right;
+}
+
+.day {
+    font-weight: bold;
+}
