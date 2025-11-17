@@ -174,3 +174,10 @@ header {
     cursor: pointer;
     font-weight: 500;
 }
+
+.column-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
