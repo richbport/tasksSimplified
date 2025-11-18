@@ -245,3 +245,15 @@ header {
     font-size: 12px;
     color: #bbb;
 }
+
+.status-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(89, 82, 209);
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
