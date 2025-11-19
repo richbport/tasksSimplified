@@ -271,4 +271,15 @@ header {
     box-shadow: 0 0 0 2px rgb(89, 82, 209);
 }
 
+.done-btn {
+    background-color: rgb(89, 82, 209);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
 
