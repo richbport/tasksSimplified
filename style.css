@@ -304,4 +304,11 @@ header {
     left: 0;
 }
 
+/* Priority colors */
+
+.extreme {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
 
