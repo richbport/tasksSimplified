@@ -321,4 +321,16 @@ header {
   font-weight: 500;
 }
 
+.priority-dot.extreme {
+  background-color: #e74c3c;
+}
+
+.priority-dot.moderate {
+  background-color: #3498db;
+}
+
+.priority-dot.low {
+  background-color: #2ecc71;
+}
+
 
