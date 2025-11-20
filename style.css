@@ -358,4 +358,15 @@ header {
   margin-left: 5px;
 }
 
+.detail-description {
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+.detail-description p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #bbb;
+}
+
 
