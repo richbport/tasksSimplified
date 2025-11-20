@@ -333,4 +333,13 @@ header {
   background-color: #2ecc71;
 }
 
+.task-detail-header {
+  margin-bottom: 20px;
+}
+
+.task-detail-header h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 
