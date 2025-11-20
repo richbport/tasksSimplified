@@ -387,4 +387,9 @@ header {
   cursor: pointer;
 }
 
+.action-btn.btn-secondary {
+  background-color: rgba(89, 82, 209, 0.2);
+  color: rgb(89, 82, 209);
+}
+
 
