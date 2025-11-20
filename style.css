@@ -348,4 +348,14 @@ header {
   gap: 5px;
 }
 
+.detail-meta-item {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.meta-label {
+  font-weight: 500;
+  margin-left: 5px;
+}
+
 
