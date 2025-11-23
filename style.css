@@ -477,4 +477,9 @@ header {
   color: #999;
 }
 
+.priority-options {
+  display: flex;
+  gap: 20px;
+}
+
 
