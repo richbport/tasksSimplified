@@ -482,4 +482,12 @@ header {
   gap: 20px;
 }
 
+.priority-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+
 
