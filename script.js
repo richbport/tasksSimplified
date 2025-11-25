@@ -2,6 +2,9 @@
 let tasks = [...sampleTasks];
 let editingTaskId = null;
 
+// DOM Elements
+const taskModal = document.getElementById("taskModal");
+const modalTitle = document.getElementById("modalTitle");
 
 
 
