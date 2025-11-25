@@ -1,3 +1,10 @@
+// Store tasks in memory
+let tasks = [...sampleTasks];
+let editingTaskId = null;
+
+
+
+
 // Sample task data for initial display
 const sampleTasks = [
   {
