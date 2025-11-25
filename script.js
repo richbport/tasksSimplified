@@ -5,6 +5,8 @@ let editingTaskId = null;
 // DOM Elements
 const taskModal = document.getElementById("taskModal");
 const modalTitle = document.getElementById("modalTitle");
+const taskTitleInput = document.getElementById("taskTitle");
+const taskDateInput = document.getElementById("taskDate");
 
 
 
