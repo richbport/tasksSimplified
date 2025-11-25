@@ -9,7 +9,8 @@ const taskTitleInput = document.getElementById("taskTitle");
 const taskDateInput = document.getElementById("taskDate");
 const taskDescriptionInput = document.getElementById("taskDescription");
 const saveTaskBtn = document.getElementById("saveTaskBtn");
-const tasksWrapper = document.getElementById(".tasks-wrapper");
+const tasksWrapper = document.querySelector(".tasks-wrapper");
+const taskDetailsPanel = document.querySelector(".task-details");
 
 
 
