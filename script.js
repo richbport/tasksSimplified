@@ -17,18 +17,23 @@ const searchInput = document.querySelector(".search-input");
 const searchButton = document.querySelector(".search-button");
 
 document.addEventListener("DOMContentLoaded", function () {
-// Set current date in header
-updateCurrentDate();
+    // Set current date in header
+    updateCurrentDate();
 
-// Render initial tasks
-renderTasks();
+    // Render initial tasks
+    renderTasks();
 
-// Select first task by default
+    // Select first task by default
     if (tasks.length > 0) {
         selectTask(tasks[0].id);
     } else {
         showEmptyState();
     }
+
+    // Event listeners
+    addTaskBtn.addEventListener("click", openAddTaskModal);
+    closeModalBtn.addEventListener("click", closeModal);
+    saveTaskBtn.addEventListener("click", saveTask);
 })
 
 
