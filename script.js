@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     addTaskBtn.addEventListener("click", openAddTaskModal);
     closeModalBtn.addEventListener("click", closeModal);
     saveTaskBtn.addEventListener("click", saveTask);
+    searchInput.addEventListener("input", searchTasks);
+    searchButton.addEventListener("click", searchTasks);
 })
 
 
