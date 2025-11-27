@@ -16,7 +16,10 @@ const closeModalBtn = document.getElementById("closeModalBtn");
 const searchInput = document.querySelector(".search-input");
 const searchButton = document.querySelector(".search-button");
 
-
+document.addEventListener("DOMContentLoaded", function () {
+// Set current date in header
+updateCurrentDate();
+})
 
 
 
