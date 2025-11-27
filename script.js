@@ -54,7 +54,10 @@ function renderTasks() {
     return;
   }
 
-  
+  tasks.forEach((task) => {
+    const taskCard = createTaskCard(task);
+    tasksWrapper.appendChild(taskCard);
+  });
 }
 
 
