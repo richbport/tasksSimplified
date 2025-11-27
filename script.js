@@ -45,6 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Render tasks in the task list
+function renderTasks() {
+  tasksWrapper.innerHTML = "";
+
+  if (tasks.length === 0) {
+    showEmptyState();
+    return;
+  }
+
+  
+}
+
 
 
 
