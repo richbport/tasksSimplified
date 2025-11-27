@@ -19,6 +19,12 @@ const searchButton = document.querySelector(".search-button");
 document.addEventListener("DOMContentLoaded", function () {
 // Set current date in header
 updateCurrentDate();
+
+// Render initial tasks
+renderTasks();
+
+// Select first task by default
+    
 })
 
 
