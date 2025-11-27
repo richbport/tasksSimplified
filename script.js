@@ -78,6 +78,12 @@ function createTaskCard(task) {
           </div>
           <div class="task-title">${task.title}</div>
           </div>
+          <div class="task-description">${truncateText(task.description, 100)}</div>
+          <div class="task-info">
+          <span class="priority-info">Priority: </span
+          class="${task.priority.toLowerCase()}">${
+            task.priority}</span></span>
+          }
   `
  
 }
