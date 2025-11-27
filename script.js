@@ -60,6 +60,13 @@ function renderTasks() {
   });
 }
 
+// Create a task card element
+function createTaskCard(task) {
+  const taskCard = document.createElement("div");
+  taskCard.className = "task-card";
+  taskCard.dataset.id = task.id;
+}
+
 
 
 
