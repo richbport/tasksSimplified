@@ -36,6 +36,13 @@ document.addEventListener("DOMContentLoaded", function () {
     saveTaskBtn.addEventListener("click", saveTask);
     searchInput.addEventListener("input", searchTasks);
     searchButton.addEventListener("click", searchTasks);
+
+    // Close modal when clicking outside
+    window.addEventListener("click", function (event) {
+      if (event.target === taskModal) {
+        closeModal();
+      }
+    })
 })
 
 
