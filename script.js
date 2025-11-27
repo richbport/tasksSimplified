@@ -17,32 +17,32 @@ const searchInput = document.querySelector(".search-input");
 const searchButton = document.querySelector(".search-button");
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Set current date in header
-    updateCurrentDate();
+  // Set current date in header
+  updateCurrentDate();
 
-    // Render initial tasks
-    renderTasks();
+  // Render initial tasks
+  renderTasks();
 
-    // Select first task by default
-    if (tasks.length > 0) {
-        selectTask(tasks[0].id);
-    } else {
-        showEmptyState();
+  // Select first task by default
+  if (tasks.length > 0) {
+    selectTask(tasks[0].id);
+  } else {
+    showEmptyState();
+  }
+
+  // Event listeners
+  addTaskBtn.addEventListener("click", openAddTaskModal);
+  closeModalBtn.addEventListener("click", closeModal);
+  saveTaskBtn.addEventListener("click", saveTask);
+  searchInput.addEventListener("input", searchTasks);
+  searchButton.addEventListener("click", searchTasks);
+
+  // Close modal when clicking outside
+  window.addEventListener("click", function (event) {
+    if (event.target === taskModal) {
+      closeModal();
     }
-
-    // Event listeners
-    addTaskBtn.addEventListener("click", openAddTaskModal);
-    closeModalBtn.addEventListener("click", closeModal);
-    saveTaskBtn.addEventListener("click", saveTask);
-    searchInput.addEventListener("input", searchTasks);
-    searchButton.addEventListener("click", searchTasks);
-
-    // Close modal when clicking outside
-    window.addEventListener("click", function (event) {
-      if (event.target === taskModal) {
-        closeModal();
-      }
-    });
+  });
 });
 
 // Render tasks in the task list
@@ -71,28 +71,24 @@ function createTaskCard(task) {
   <div class="task-status">
   <div class="status-circle ${task.completed ? "completed" : ""}">
   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="${
-            task.completed ? "white" : "currentColor"
-          }" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    task.completed ? "white" : "currentColor"
+  }" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="20 6 9 17 4 12"></polyline>
           </svg>
           </div>
           <div class="task-title">${task.title}</div>
           </div>
-          <div class="task-description">${truncateText(task.description, 100)}</div>
+          <div class="task-description">${truncateText(
+            task.description,
+            100
+          )}</div>
           <div class="task-info">
           <span class="priority-info">Priority: <span
-          class="${task.priority.toLowerCase()}">${
-            task.priority
-          }</span></span>
+          class="${task.priority.toLowerCase()}">${task.priority}</span></span>
           <span class="date-info">Created on: ${task.date}</span>
           </div>
           `;
-          
- 
 }
-
-
-
 
 // Sample task data for initial display
 const sampleTasks = [
