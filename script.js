@@ -24,7 +24,11 @@ updateCurrentDate();
 renderTasks();
 
 // Select first task by default
-    
+    if (tasks.length > 0) {
+        selectTask(tasks[0].id);
+    } else {
+        showEmptyState();
+    }
 })
 
 
