@@ -14,6 +14,7 @@ const taskDetailsPanel = document.querySelector(".task-details");
 const addTaskBtn = document.getElementById("addTaskBtn");
 const closeModalBtn = document.getElementById("closeModalBtn");
 const searchInput = document.querySelector(".search-input");
+const searchButton = document.querySelector(".search-button");
 
 
 
