@@ -65,6 +65,13 @@ function createTaskCard(task) {
   const taskCard = document.createElement("div");
   taskCard.className = "task-card";
   taskCard.dataset.id = task.id;
+
+  // Create task card content
+  taskCard.innerHTML = `
+  <div class="task-status">
+  <div class="status-circle ${task.completed ? "completed" : ""}">
+  `
+ 
 }
 
 
