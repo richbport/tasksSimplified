@@ -82,9 +82,12 @@ function createTaskCard(task) {
           <div class="task-info">
           <span class="priority-info">Priority: </span
           class="${task.priority.toLowerCase()}">${
-            task.priority}</span></span>
-          }
-  `
+            task.priority
+          }</span></span>
+          <span class="date-info">Created on: ${task.date}</span>
+          </div>
+          `;
+          
  
 }
 
