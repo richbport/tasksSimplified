@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (event.target === taskModal) {
         closeModal();
       }
-    })
-})
+    });
+});
 
 
 
