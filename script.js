@@ -102,7 +102,7 @@ const sampleTasks = [
     description:
       "Go through all lessons in Module 2, ensuring you pause to take notes and code along actively. This module introduces real-world projects, so take the time to understand how the concepts from Module 1 are applied in practical scenarios.",
     priority: "Extreme",
-    date: "20/05/2025",
+    date: "05/05/2025",
     completed: false,
   },
   {
@@ -111,7 +111,7 @@ const sampleTasks = [
     description:
       "Go through all lessons inside Module 1 at your own pace. As you progress, make detailed notes to reinforce your understanding and practice writing the code alongside the instructor.",
     priority: "Extreme",
-    date: "01/05/2025",
+    date: "05/01/2025",
     completed: true,
   },
 ];
