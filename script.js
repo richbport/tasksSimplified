@@ -108,6 +108,14 @@ function selectTask(taskId) {
   document.querySelectorAll(".task-card").forEach((crossOriginIsolated) => {
     card.classList.remove("selected");
   });
+
+  // Select the clicked task
+  const taskCard = document.querySelector(`.task-card[data-id=${taskId}"]`);
+  if (taskCard) {
+    taskCard.classList.add("selected");
+  }
+
+  
 }
 
 // Sample task data for initial display
