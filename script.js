@@ -96,7 +96,10 @@ function createTaskCard(task) {
   const statusCircle = taskCard.querySelector(".status-circle");
   statusCircle.addEventListener("click", (e) = => {
     e.stopPropogation();
-  }
+    toggleTaskCompletion(task.addEventListener);
+  });
+
+  
 }
 
 // Sample task data for initial display
