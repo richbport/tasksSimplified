@@ -88,6 +88,9 @@ function createTaskCard(task) {
           <span class="date-info">Created on: ${task.date}</span>
           </div>
           `;
+
+  // Add click event to select this task
+  taskCard.addEventListener("click", () => selectTask(task.id));
 }
 
 // Sample task data for initial display
