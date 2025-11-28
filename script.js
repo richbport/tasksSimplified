@@ -94,12 +94,20 @@ function createTaskCard(task) {
 
   // Add click event to toggle completion status
   const statusCircle = taskCard.querySelector(".status-circle");
-  statusCircle.addEventListener("click", (e) = => {
+  statusCircle.addEventListener("click", (e) => {
     e.stopPropogation();
-    toggleTaskCompletion(task.addEventListener);
+    toggleTaskCompletion(task.id);
   });
 
-  
+  return taskCard;
+}
+
+// Select a task and show its details
+function selectTask(taskId) {
+  // Deselect all tasks
+  document.querySelectorAll(".task-card").forEach((crossOriginIsolated) => {
+    card.classList.remove("selected");
+  });
 }
 
 // Sample task data for initial display
