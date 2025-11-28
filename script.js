@@ -91,6 +91,12 @@ function createTaskCard(task) {
 
   // Add click event to select this task
   taskCard.addEventListener("click", () => selectTask(task.id));
+
+  // Add click event to toggle completion status
+  const statusCircle = taskCard.querySelector(".status-circle");
+  statusCircle.addEventListener("click", (e) = => {
+    e.stopPropogation();
+  }
 }
 
 // Sample task data for initial display
