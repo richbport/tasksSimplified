@@ -208,7 +208,7 @@ function updateCurrentDate() {
   const month = String(now.getMonth() + 1).padStart(2, "0");
   const day = String(now.getDate()).padStart(2, "0");
   const year = now.getFullYear();
-  const formattedDate = `${day}/${month}/${year}`;
+  const formattedDate = `${month}/${day}/${year}`;
 
   document.getElementById("currentDay").textContent = dayName;
   document.getElementById("currentDate").textContent = formattedDate;
