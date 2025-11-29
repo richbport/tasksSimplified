@@ -105,7 +105,7 @@ function createTaskCard(task) {
 // Select a task and show its details
 function selectTask(taskId) {
   // Deselect all tasks
-  document.querySelectorAll(".task-card").forEach((crossOriginIsolated) => {
+  document.querySelectorAll(".task-card").forEach((card) => {
     card.classList.remove("selected");
   });
 
@@ -115,6 +115,9 @@ function selectTask(taskId) {
     taskCard.classList.add("selected");
   }
 
+  // Find the task data
+  const task = tasks.find((t) => t.id === taskId);
+  if (!task) return;
   
 }
 
