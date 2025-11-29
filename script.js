@@ -124,6 +124,11 @@ function selectTask(taskId) {
 taskDetailsPanel.innerHTML = `
 <div class="task-detail-header">
 <h2>${task.title}</h2>
+<div class="detail-meta">
+<div class="detail-meta-item">
+<span class="meta-label">Priority:</span>
+<span class="${task.priority.toLowerCase()}">${task.priority}</span>
+</div>
 `
 
 // Sample task data for initial display
