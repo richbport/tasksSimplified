@@ -129,6 +129,13 @@ taskDetailsPanel.innerHTML = `
 <span class="meta-label">Priority:</span>
 <span class="${task.priority.toLowerCase()}">${task.priority}</span>
 </div>
+<div class="detail-meta-item">
+<span class="meta-label">Created on:</span>
+<span>${task.date}</span>
+</div>
+</div>
+</div>
+
 `
 
 // Sample task data for initial display
