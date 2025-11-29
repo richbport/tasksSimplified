@@ -179,6 +179,14 @@ function selectTask(taskId) {
       "Saturday",
     ];
     const dayName = days[now.getDay()];
+
+    // Format date as DD/MM/YYYY
+    const day = String(now.getDate()).padStart(2, "0");
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const year = now.getFullYear();
+    const formattedDate = `${day}/${month}/${year}`;
+
+    
   }
 
 // Sample task data for initial display
