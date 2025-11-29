@@ -204,9 +204,9 @@ function updateCurrentDate() {
   ];
   const dayName = days[now.getDay()];
 
-  // Format date as DD/MM/YYYY
-  const day = String(now.getDate()).padStart(2, "0");
+  // Format date as MM/DD/YYYY
   const month = String(now.getMonth() + 1).padStart(2, "0");
+  const day = String(now.getDate()).padStart(2, "0");
   const year = now.getFullYear();
   const formattedDate = `${day}/${month}/${year}`;
 
