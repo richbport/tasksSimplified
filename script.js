@@ -158,8 +158,12 @@ function selectTask(taskId) {
 `;
 
 // Add event listeners to action buttons
-document.getElementById("editCurrentTaskBtn")
+document
+.getElementById("editCurrentTaskBtn")
 .addEventListener("click", () => openEditTaskModal(taskId));
+document.
+getElementById("deleteCurretTaskBtn")
+.addEventListener("click", () => deleteTask(taskId));
 }
 
 // Sample task data for initial display
