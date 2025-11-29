@@ -136,6 +136,10 @@ taskDetailsPanel.innerHTML = `
 </div>
 </div>
 
+<div class="detail-description">
+<p>${task.descripton}</p>
+</div>
+
 `
 
 // Sample task data for initial display
