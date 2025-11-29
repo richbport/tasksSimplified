@@ -140,7 +140,11 @@ taskDetailsPanel.innerHTML = `
 <p>${task.descripton}</p>
 </div>
 
-`
+<div class="action-buttons">
+<button class="action-btn btn-secondary" id="editCurrentTaskBtn">
+
+
+`;
 
 // Sample task data for initial display
 const sampleTasks = [
