@@ -118,8 +118,13 @@ function selectTask(taskId) {
   // Find the task data
   const task = tasks.find((t) => t.id === taskId);
   if (!task) return;
-  
 }
+
+// Update the details panel
+taskDetailsPanel.innerHTML = `
+<div class="task-detail-header">
+<h2>${task.title}</h2>
+`
 
 // Sample task data for initial display
 const sampleTasks = [
