@@ -186,7 +186,8 @@ function selectTask(taskId) {
     const year = now.getFullYear();
     const formattedDate = `${day}/${month}/${year}`;
 
-    
+    document.getElementById("currentDay").textContent = dayName;
+    document.getElementById("currentDate").textContent = formattedDate;
   }
 
 // Sample task data for initial display
