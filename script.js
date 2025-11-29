@@ -214,6 +214,11 @@ function updateCurrentDate() {
   document.getElementById("currentDate").textContent = formattedDate;
 }
 
+// Truncate text with ellipsis
+function truncateText(text, maxLength) {
+  return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
+}
+
 // Sample task data for initial display
 const sampleTasks = [
   {
