@@ -242,6 +242,12 @@ function toggleTaskCompletion(taskId) {
     const statusCircle = document.querySelector(
       `.task-card[data-id="${taskId}"] .status-circle`
     );
+    if (statusCircle) {
+      statusCircle.classList.toggle("completed");
+    }
+
+    // Re-select the task to update details view
+    selectTask(taskId);
   }
 }
 
