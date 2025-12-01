@@ -226,6 +226,9 @@ function showEmptyState() {
    <p>No tasks to show. Please add a task.</p>
   </div>
   `;
+
+// Clear the details panel
+taskDetailsPanel.innerHTML = "";
 }
 
 // Sample task data for initial display
