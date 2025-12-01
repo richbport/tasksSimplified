@@ -219,6 +219,15 @@ function truncateText(text, maxLength) {
   return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
 }
 
+// Show empty state when no tasks
+function showEmptyState() {
+  tasksWrapper.innerHTML = `
+  <div class="empty-state">
+   <p>No tasks to show. Please add a task.</p>
+  </div>
+  `;
+}
+
 // Sample task data for initial display
 const sampleTasks = [
   {
