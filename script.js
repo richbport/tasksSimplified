@@ -234,6 +234,12 @@ taskDetailsPanel.innerHTML = "";
 // Toggle task completion status
 function toggleTaskCompletion(taskId) {
   const taskIndex = tasks.findIndex((t) => t.id === taskId);
+  if (taskIndex !== -1) {
+    tasks[taskIndex].completed = 
+    !tasks[taskIndex].completed;
+
+    
+  }
 }
 
 // Sample task data for initial display
