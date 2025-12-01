@@ -238,7 +238,10 @@ function toggleTaskCompletion(taskId) {
     tasks[taskIndex].completed = 
     !tasks[taskIndex].completed;
 
-    
+    // Update the UI
+    const statusCircle = document.querySelector(
+      `.task-card[data-id="${taskId}"] .status-circle`
+    );
   }
 }
 
