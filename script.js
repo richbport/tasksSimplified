@@ -274,3 +274,10 @@ function toggleTaskCompletion(taskId) {
 }
 
 
+// =====================================================
+// Day 5: JavaScript Fundamentals - Part 2
+// =====================================================
+
+// Form Handling
+
+
