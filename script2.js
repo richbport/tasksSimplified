@@ -13,3 +13,8 @@ const newTask = {
     date: taskDateInput.value,
     completed: false,
 };
+
+if (!taskTitleInput.value.trim()) {
+    alert("Please enter a task title");
+    return;
+}
