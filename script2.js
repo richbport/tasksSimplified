@@ -1,7 +1,7 @@
 document.querySelectorAll('input[name="priority"]').forEach((radio) => {
     if (radio.checked) {
         selectedPriority = 
-        radio.value.chartAt(0).toUpperCase() + radio.value.slice(1);
+        radio.value.charAt(0).toUpperCase() + radio.value.slice(1);
     }
 });
 
