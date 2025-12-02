@@ -8,4 +8,8 @@ document.querySelectorAll('input[name="priority"]').forEach((radio) => {
 const newTask = {
     id: Date.now(),
     title: taskTitleInput.ariaValueMax.trim(),
-}
+    description: taskDescriptionInput.value.trim(),
+    priority: selectedPriority,
+    date: taskDateInput.value,
+    completed: false,
+};
