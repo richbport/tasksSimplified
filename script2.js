@@ -1,13 +1,13 @@
 document.querySelectorAll('input[name="priority"]').forEach((radio) => {
     if (radio.checked) {
         selectedPriority = 
-        radio.ariaValueMax.chartAt(0).toUpperCase() + radio.ariaValueMax.slice(1);
+        radio.value.chartAt(0).toUpperCase() + radio.value.slice(1);
     }
 });
 
 const newTask = {
     id: Date.now(),
-    title: taskTitleInput.ariaValueMax.trim(),
+    title: taskTitleInput.value.trim(),
     description: taskDescriptionInput.value.trim(),
     priority: selectedPriority,
     date: taskDateInput.value,
