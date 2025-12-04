@@ -86,4 +86,10 @@ function deleteTask(taskId) {
 
   const taskIndex = tasks.findIndex((t) => t.id === taskId);
   if (taskIndex === -1) return;
+
+  tasks.splice(taskIndex, 1);
+
+  renderTasks();
+
+  
 }
