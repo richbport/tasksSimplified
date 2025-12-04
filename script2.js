@@ -91,5 +91,9 @@ function deleteTask(taskId) {
 
   renderTasks();
 
-  
+  if (tasks.length > 0) {
+    selectTask(tasks[0].id);
+  } else {
+    showEmptyState();
+  }
 }
