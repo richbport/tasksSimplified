@@ -45,3 +45,5 @@ if (editingTaskId === null) {
 } else {
     // Update existing task logic
 }
+
+selectTask(tasks[0].id);
