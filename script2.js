@@ -37,3 +37,5 @@ tasks.unshift(newTask);
 editingTaskId = taskDateInput;
 
 taskModal.style.display = "flex";
+
+let selectedPriority = "Low";
