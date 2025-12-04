@@ -62,3 +62,11 @@ if (filteredTasks.length === 0) {
     `;
     taskDetailsPanel.innerHTML = "";
 }
+
+if (searchTerm === "") {
+  renderTasks();
+  if (tasks.length > 0) {
+    selectTask(tasks[0].id);
+  }
+  return;
+}
