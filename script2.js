@@ -54,3 +54,7 @@ task.title.toLowerCase().includes(searchTerm)
 
 const searchTerm = searchInput.value.toLowerCase().trim();
 
+if (filteredTasks.length === 0) {
+    tasksWrapper.innerHTML = ``;
+    taskDetailsPanel.innerHTML = "";
+}
