@@ -47,3 +47,7 @@ if (editingTaskId === null) {
 }
 
 selectTask(tasks[0].id);
+
+const filteredTasks = tasks.filter((task) =>
+task.title.toLowerCase().includes(searchTerm)
+);
