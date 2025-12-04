@@ -30,4 +30,6 @@ taskDateInput.value = `${month}/${day}/${year}`;
 
 document.querySelectorAll('input[name="priority"]').forEach((radio) => {
     radio.checked = radio.value === "low";
-})
+});
+
+tasks.unshift(newTask);
