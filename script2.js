@@ -39,3 +39,9 @@ editingTaskId = taskDateInput;
 taskModal.style.display = "flex";
 
 let selectedPriority = "Low";
+
+if (editingTaskId === null) {
+    // Create new task logic
+} else {
+    // Update existing task logic
+}
