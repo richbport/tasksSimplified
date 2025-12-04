@@ -70,3 +70,5 @@ if (searchTerm === "") {
   }
   return;
 }
+
+const task = tasks.find((t) => t.id === taskId);
