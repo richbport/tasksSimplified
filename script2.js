@@ -34,7 +34,7 @@ document.querySelectorAll('input[name="priority"]').forEach((radio) => {
 
 tasks.unshift(newTask);
 
-editingTaskId = taskDateInput;
+editingTaskId = taskId;
 
 taskModal.style.display = "flex";
 
