@@ -80,3 +80,10 @@ if (taskIndex !== -1) {
   tasks[taskIndex].priority = selectedPriority;
   tasks[taskIndex].date = taskDateInput.value;
 }
+
+function deleteTask(taskId) {
+  if (!confirm("Are you sure you want to delete this task?")) return;
+
+  const taskIndex = tasks.findIndex((t) => t.id === taskId);
+  if (taskIndex === -1) return;
+}
