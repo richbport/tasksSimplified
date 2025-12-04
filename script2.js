@@ -72,3 +72,11 @@ if (searchTerm === "") {
 }
 
 const task = tasks.find((t) => t.id === taskId);
+
+const taskIndex = tasks.findIndex((t) => t.id === editingTaskId);
+if (taskIndex !== -1) {
+  tasks[taskIndex].title = taskTitleInput.value.trim();
+  tasks[taskIndex].description = taskDescriptionInput.value.trim();
+  tasks[taskIndex].priority = selectedPriority;
+  tasks[taskIndex].date = taskDateInput.value;
+}
