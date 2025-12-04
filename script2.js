@@ -55,6 +55,10 @@ task.title.toLowerCase().includes(searchTerm)
 const searchTerm = searchInput.value.toLowerCase().trim();
 
 if (filteredTasks.length === 0) {
-    tasksWrapper.innerHTML = ``;
+    tasksWrapper.innerHTML = `
+    <div class="empty-state">
+      <p>No tasks match your search. Try a different query.</p>
+    </div>
+    `;
     taskDetailsPanel.innerHTML = "";
 }
