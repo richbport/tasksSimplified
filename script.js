@@ -280,4 +280,9 @@ function toggleTaskCompletion(taskId) {
 
 // Form Handling
 
-
+function openAddTaskModal() {
+  editingTaskId = null;
+  modalTitle.textContent = "Add New Task";
+  taskTitleInput.value = "";
+  taskDescriptionInput.value = "";
+}
