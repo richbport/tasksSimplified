@@ -294,5 +294,7 @@ function openAddTaskModal() {
 
   document.querySelectorAll('input[name="priority"]').forEach((radio) => {
     radio.checked = radio.value === "low";
-  })
+  });
+
+
 }
