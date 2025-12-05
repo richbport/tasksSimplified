@@ -291,4 +291,8 @@ function openAddTaskModal() {
   const day = String(now.getDate()).padStart(2, "0");
   const year = now.getFullYear();
   taskDateInput.value = `${month}/${day}/${year}`;
+
+  document.querySelectorAll('input[name="priority"]').forEach((radio) => {
+    radio.checked = radio.value === "low";
+  })
 }
