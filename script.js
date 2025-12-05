@@ -296,5 +296,5 @@ function openAddTaskModal() {
     radio.checked = radio.value === "low";
   });
 
-  taskModal.style.display = "flex";
+  taskModal.style.display = 'flex';
 }
