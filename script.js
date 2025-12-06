@@ -298,3 +298,7 @@ function openAddTaskModal() {
 
   taskModal.style.display = "flex";
 }
+
+function openEditTaskModal(taskId) {
+  const task = tasks.find((t) => t.id === taskId);
+}
