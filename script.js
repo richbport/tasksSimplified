@@ -301,4 +301,13 @@ function openAddTaskModal() {
 
 function openEditTaskModal(taskId) {
   const task = tasks.find((t) => t.id === taskId);
+  if (!task) return;
+
+  editingTaskId = taskId;
+  modalTitle.textContent = "Edit Task";
+  taskTitleInput.value = task.title;
+  taskDateInput.value = task.date;
+  taskDescriptionInput.value = task.description;
+
+  
 }
