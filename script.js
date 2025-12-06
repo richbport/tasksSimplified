@@ -309,9 +309,9 @@ function openEditTaskModal(taskId) {
   taskDateInput.value = task.date;
   taskDescriptionInput.value = task.description;
 
-  document.querySelectorAll('input[name="priority"]').forEach(radio) => {
+  document.querySelectorAll('input[name="priority"]').forEach((radio) => {
     radio.checked = radio.value.toLowerCase() === task.priority.toLowerCase();
-  };
+  });
 
-  
+taskModal.style.display = "flex";
 }
