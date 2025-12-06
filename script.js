@@ -118,7 +118,7 @@ function createTaskCard(task) {
   // Add click event to toggle completion status
   const statusCircle = taskCard.querySelector(".status-circle");
   statusCircle.addEventListener("click", (e) => {
-    e.stopPropogation();
+    e.stopPropagation();
     toggleTaskCompletion(task.id);
   });
 
@@ -133,7 +133,7 @@ function selectTask(taskId) {
   });
 
   // Select the clicked task
-  const taskCard = document.querySelector(`.task-card[data-id=${taskId}"]`);
+  const taskCard = document.querySelector(`.task-card[data-id="${taskId}"]`);
   if (taskCard) {
     taskCard.classList.add("selected");
   }
@@ -209,7 +209,7 @@ function selectTask(taskId) {
     .getElementById("editCurrentTaskBtn")
     .addEventListener("click", () => openEditTaskModal(taskId));
   document
-    .getElementById("deleteCurretTaskBtn")
+    .getElementById("deleteCurrentTaskBtn")
     .addEventListener("click", () => deleteTask(taskId));
 }
 
@@ -296,5 +296,5 @@ function openAddTaskModal() {
     radio.checked = radio.value === "low";
   });
 
-  taskModal.style.display = 'flex';
+  taskModal.style.display = "flex";
 }
