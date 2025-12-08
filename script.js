@@ -327,7 +327,7 @@ function saveTask() {
   }
 
   let selectedPriority = "Low";
-  document.querySelectorAll('input[name="priority]').forEach((radio) => {
+  document.querySelectorAll('input[name="priority"]').forEach((radio) => {
     if (radio.checked) {
       selectedPriority =
       radio.value.charAt(0).toUpperCase() + radio.value.slice(1);
