@@ -313,5 +313,10 @@ function openEditTaskModal(taskId) {
     radio.checked = radio.value.toLowerCase() === task.priority.toLowerCase();
   });
 
-taskModal.style.display = "flex";
+  taskModal.style.display = "flex";
 }
+
+function closeModal() {
+  taskModal.style.display = "none";
+}
+
