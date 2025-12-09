@@ -348,6 +348,11 @@ function saveTask() {
 
     renderTasks();
     selectTask(newTask.id);
+  } else {
+    const taskIndex = tasks.findIndex((t) => t.id === editingTaskId);
+    if (taskIndex !== -1) {
+      
+    }
   }
 
 }
