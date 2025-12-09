@@ -365,5 +365,9 @@ function saveTask() {
 }
 
 function deleteTask(taskId) {
-  if (!confirm("Are you sure you want to delete this task?"))
+  if (!confirm("Are you sure you want to delete this task?")) return;
+
+  const taskIndex = tasks.findIndex((t) => t.id === taskId);
+  if (taskIndex === -1) return;
+
 }
