@@ -20,7 +20,6 @@ const sampleTasks = [
   },
 ];
 
-
 // Store tasks in memory
 let tasks = [...sampleTasks];
 let editingTaskId = null;
@@ -273,7 +272,6 @@ function toggleTaskCompletion(taskId) {
   }
 }
 
-
 // =====================================================
 // Day 5: JavaScript Fundamentals - Part 2
 // =====================================================
@@ -323,14 +321,14 @@ function closeModal() {
 function saveTask() {
   if (!taskTitleInput.value.trim()) {
     alert("Please enter a task title");
-    return
+    return;
   }
 
   let selectedPriority = "Low";
   document.querySelectorAll('input[name="priority"]').forEach((radio) => {
     if (radio.checked) {
       selectedPriority =
-      radio.value.charAt(0).toUpperCase() + radio.value.slice(1);
+        radio.value.charAt(0).toUpperCase() + radio.value.slice(1);
     }
   });
 
@@ -362,4 +360,6 @@ function saveTask() {
     }
   }
 
+  // Close modal
+  closeModal();
 }
