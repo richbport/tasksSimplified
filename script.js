@@ -334,4 +334,10 @@ function saveTask() {
     }
   });
 
+  if (editingTaskId === null) {
+    const newTask = {
+      
+    }
+  }
+
 }
