@@ -356,6 +356,9 @@ function saveTask() {
       tasks[taskIndex].priority = selectedPriority;
       tasks[taskIndex].date = taskDateInput.value;
 
+      // Render tasks and select the updated one
+      renderTasks();
+      selectTask(editingTaskId);
     }
   }
 
