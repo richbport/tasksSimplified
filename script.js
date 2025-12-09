@@ -336,8 +336,15 @@ function saveTask() {
 
   if (editingTaskId === null) {
     const newTask = {
-      
-    }
+      id: Date.now(),
+      title: taskTitleInput.value.trim(),
+      description: taskDescriptionInput.value.trim(),
+      priority: selectedPriority,
+      date: taskDateInput.value,
+      completed: false,
+    };
+
+    
   }
 
 }
