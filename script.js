@@ -344,7 +344,10 @@ function saveTask() {
       completed: false,
     };
 
-    
+    tasks.unshift(newTask);
+
+    renderTasks();
+    selectTask(newTask.id);
   }
 
 }
