@@ -402,6 +402,7 @@ if (filteredTasks.length === 0) {
       <p>No tasks match your search. Try a different query.</p>
     </div>
     `;
+  taskDetailsPanel.innerHTML = "";
 }
 
 }
