@@ -383,4 +383,14 @@ function deleteTask(taskId) {
 
 function searchTasks() {
   const searchTerm = searchInput.value.toLowerCase().trim();
+
+  if (searchTerm === "") {
+    renderTasks();
+    if (tasks.length > 0) {
+      selectTask(tasks[0].id);
+    }
+    return;
+  } 
+
+
 }
