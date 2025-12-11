@@ -380,3 +380,7 @@ function deleteTask(taskId) {
     showEmptyState();
   }
 }
+
+function searchTasks() {
+  const searchTerm = searchInput.value.toLowerCase().trim();
+}
