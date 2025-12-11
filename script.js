@@ -403,6 +403,13 @@ if (filteredTasks.length === 0) {
     </div>
     `;
   taskDetailsPanel.innerHTML = "";
+} else {
+  tasksWrapper.innerHTML = "";
+  filteredTasks.forEach((task) => {
+    const taskCard = createTaskCard(task);
+    tasksWrapper.appendChild(taskCard);
+  });
+  
 }
 
 }
