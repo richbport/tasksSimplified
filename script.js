@@ -390,26 +390,26 @@ function searchTasks() {
       selectTask(tasks[0].id);
     }
     return;
-  } 
+  }
 
-const filteredTasks = tasks.filter((task) =>
-task.title.toLowerCase().includes(searchTerm)
-);
+  const filteredTasks = tasks.filter((task) =>
+    task.title.toLowerCase().includes(searchTerm)
+  );
 
-if (filteredTasks.length === 0) {
-  tasksWrapper.innerHTML = `
+  if (filteredTasks.length === 0) {
+    tasksWrapper.innerHTML = `
     <div class=empty-state">
       <p>No tasks match your search. Try a different query.</p>
     </div>
     `;
-  taskDetailsPanel.innerHTML = "";
-} else {
-  tasksWrapper.innerHTML = "";
-  filteredTasks.forEach((task) => {
-    const taskCard = createTaskCard(task);
-    tasksWrapper.appendChild(taskCard);
-  });
-  
-}
+    taskDetailsPanel.innerHTML = "";
+  } else {
+    tasksWrapper.innerHTML = "";
+    filteredTasks.forEach((task) => {
+      const taskCard = createTaskCard(task);
+      tasksWrapper.appendChild(taskCard);
+    });
 
+    selectTask(filteredTasks[0].id);
+  }
 }
