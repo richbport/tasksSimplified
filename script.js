@@ -396,4 +396,12 @@ const filteredTasks = tasks.filter((task) =>
 task.title.toLowerCase().includes(searchTerm)
 );
 
+if (filteredTasks.length === 0) {
+  tasksWrapper.innerHTML = `
+    <div class=empty-state">
+      <p>No tasks match your search. Try a different query.</p>
+    </div>
+    `;
+}
+
 }
