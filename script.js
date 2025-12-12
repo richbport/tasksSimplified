@@ -318,12 +318,14 @@ function closeModal() {
   taskModal.style.display = "none";
 }
 
+// 5.2.2: SAVING AND VALIDATING FORM DATA
 function saveTask() {
   if (!taskTitleInput.value.trim()) {
     alert("Please enter a task title");
     return;
   }
 
+  // Get selected priority
   let selectedPriority = "Low";
   document.querySelectorAll('input[name="priority"]').forEach((radio) => {
     if (radio.checked) {
