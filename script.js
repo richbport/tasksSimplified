@@ -397,6 +397,7 @@ function searchTasks() {
   );
 
   if (filteredTasks.length === 0) {
+    // Show no results message
     tasksWrapper.innerHTML = `
     <div class=empty-state">
       <p>No tasks match your search. Try a different query.</p>
@@ -404,12 +405,14 @@ function searchTasks() {
     `;
     taskDetailsPanel.innerHTML = "";
   } else {
+    // Show filtered tasks
     tasksWrapper.innerHTML = "";
     filteredTasks.forEach((task) => {
       const taskCard = createTaskCard(task);
       tasksWrapper.appendChild(taskCard);
     });
 
+    // Select the first filtered task
     selectTask(filteredTasks[0].id);
   }
 }
