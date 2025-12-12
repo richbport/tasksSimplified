@@ -392,6 +392,7 @@ function searchTasks() {
     return;
   }
 
+  // Filter tasks by title
   const filteredTasks = tasks.filter((task) =>
     task.title.toLowerCase().includes(searchTerm)
   );
