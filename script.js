@@ -307,13 +307,16 @@ function openEditTaskModal(taskId) {
   taskDateInput.value = task.date;
   taskDescriptionInput.value = task.description;
 
+  // Set priority radio button
   document.querySelectorAll('input[name="priority"]').forEach((radio) => {
     radio.checked = radio.value.toLowerCase() === task.priority.toLowerCase();
   });
 
+  // Show modal
   taskModal.style.display = "flex";
 }
 
+// Close the modal
 function closeModal() {
   taskModal.style.display = "none";
 }
