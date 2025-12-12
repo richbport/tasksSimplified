@@ -333,20 +333,23 @@ function saveTask() {
   });
 
   if (editingTaskId === null) {
+    // Add new task
     const newTask = {
-      id: Date.now(),
+      id: Date.now(), // Use timestamp as unique id
       title: taskTitleInput.value.trim(),
       description: taskDescriptionInput.value.trim(),
       priority: selectedPriority,
       date: taskDateInput.value,
       completed: false,
     };
-
+    // Add to the beginning of the tasks array
     tasks.unshift(newTask);
 
+    // Render tasks and select the new one
     renderTasks();
     selectTask(newTask.id);
   } else {
+    // Update existing task
     const taskIndex = tasks.findIndex((t) => t.id === editingTaskId);
     if (taskIndex !== -1) {
       tasks[taskIndex].title = taskTitleInput.value.trim();
