@@ -364,16 +364,21 @@ function saveTask() {
   closeModal();
 }
 
+// 5.2.3: DELETE TASK FUNCTIONALITY
 function deleteTask(taskId) {
   if (!confirm("Are you sure you want to delete this task?")) return;
 
+  // Find the task index
   const taskIndex = tasks.findIndex((t) => t.id === taskId);
   if (taskIndex === -1) return;
 
+  // Remove the task
   tasks.splice(taskIndex, 1);
 
+  // Render tasks
   renderTasks();
 
+  // Select another task or show empty state
   if (tasks.length > 0) {
     selectTask(tasks[0].id);
   } else {
