@@ -321,6 +321,8 @@ function closeModal() {
   taskModal.style.display = "none";
 }
 
+// ================================================== //
+
 // 5.2.2: SAVING AND VALIDATING FORM DATA
 function saveTask() {
   if (!taskTitleInput.value.trim()) {
@@ -372,6 +374,8 @@ function saveTask() {
   closeModal();
 }
 
+// ================================================== //
+
 // 5.2.3: DELETE TASK FUNCTIONALITY
 function deleteTask(taskId) {
   if (!confirm("Are you sure you want to delete this task?")) return;
@@ -393,6 +397,8 @@ function deleteTask(taskId) {
     showEmptyState();
   }
 }
+
+// ================================================== //
 
 // 5.2.4: SEARCH FUNCTIONALITY
 function searchTasks() {
