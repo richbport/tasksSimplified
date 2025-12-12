@@ -381,6 +381,7 @@ function deleteTask(taskId) {
   }
 }
 
+// 5.2.4: SEARCH FUNCTIONALITY
 function searchTasks() {
   const searchTerm = searchInput.value.toLowerCase().trim();
 
