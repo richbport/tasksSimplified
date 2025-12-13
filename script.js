@@ -279,21 +279,25 @@ function toggleTaskCompletion(taskId) {
 // Form Handling
 
 function openAddTaskModal() {
+  // Reset the form
   editingTaskId = null;
   modalTitle.textContent = "Add New Task";
   taskTitleInput.value = "";
   taskDescriptionInput.value = "";
 
+  // Set current date
   const now = new Date();
   const month = String(now.getMonth() + 1).padStart(2, "0");
   const day = String(now.getDate()).padStart(2, "0");
   const year = now.getFullYear();
   taskDateInput.value = `${month}/${day}/${year}`;
 
+  // Set default priority (Low)
   document.querySelectorAll('input[name="priority"]').forEach((radio) => {
     radio.checked = radio.value === "low";
   });
 
+  // Show modal
   taskModal.style.display = "flex";
 }
 
