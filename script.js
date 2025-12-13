@@ -297,10 +297,12 @@ function openAddTaskModal() {
   taskModal.style.display = "flex";
 }
 
+// Open modal to edit existing task
 function openEditTaskModal(taskId) {
   const task = tasks.find((t) => t.id === taskId);
   if (!task) return;
 
+  // Set form values from task
   editingTaskId = taskId;
   modalTitle.textContent = "Edit Task";
   taskTitleInput.value = task.title;
