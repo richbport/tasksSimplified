@@ -212,6 +212,7 @@ function selectTask(taskId) {
     .addEventListener("click", () => deleteTask(taskId));
 }
 
+// 4.2.5: HELPER FUNCTIONS
 // Update current date in header
 function updateCurrentDate() {
   const now = new Date();
