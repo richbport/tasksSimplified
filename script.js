@@ -276,7 +276,7 @@ function toggleTaskCompletion(taskId) {
 // Day 5: JavaScript Fundamentals - Part 2
 // =====================================================
 
-// Form Handling
+// 5.2.1: FORM HANDLING
 
 function openAddTaskModal() {
   // Reset the form
