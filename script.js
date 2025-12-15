@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// 4.2.3: CREATING AND RENDERING ELEMENTS
 // Render tasks in the task list
 function renderTasks() {
   tasksWrapper.innerHTML = "";
