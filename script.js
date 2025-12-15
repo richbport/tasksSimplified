@@ -124,6 +124,7 @@ function createTaskCard(task) {
   return taskCard;
 }
 
+// 4.2.3: HANDLING EVENTS AND USER INTERACTIONS
 // Select a task and show its details
 function selectTask(taskId) {
   // Deselect all tasks
