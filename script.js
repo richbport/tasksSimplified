@@ -20,6 +20,8 @@ const sampleTasks = [
   },
 ];
 
+// 4.2.1: INITIAL SET UP AND DOM ELEMENTS
+
 // Store tasks in memory
 let tasks = [...sampleTasks];
 let editingTaskId = null;
