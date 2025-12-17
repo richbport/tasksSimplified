@@ -72,7 +72,10 @@ body {
   overflow: auto;
 }
 
-/* Header styles */
+/* =======================
+   HEADER STYLES
+   ========================*/
+
 header {
   display: flex;
   justify-content: space-between;
