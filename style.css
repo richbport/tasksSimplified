@@ -132,6 +132,10 @@ header {
   justify-content: center;
 }
 
+/* =====================
+   DATE DISPLAY
+   ===================== */
+
 .date-display {
   text-align: right;
 }
