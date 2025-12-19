@@ -97,6 +97,10 @@ header {
   margin-right: 10px;
 }
 
+/* =====================
+   SEARCH AREA
+   ===================== */
+
 .search-container {
   display: flex;
   flex-grow: 1;
