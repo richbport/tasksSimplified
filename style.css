@@ -205,6 +205,10 @@ header {
     font-weight: 500;
 }
 
+/* =====================
+   COLUMN HEADERS
+   ===================== */
+
 .column-header-container {
     display: flex;
     justify-content: space-between;
