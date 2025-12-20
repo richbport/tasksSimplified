@@ -149,7 +149,9 @@ header {
     color: rgb(89, 82, 209);
 }
 
-/* Sidebar styling */
+/* =====================
+   SIDEBAR STYLES
+   ===================== */
 .sidebar {
     width: 250px;
     min-width: 250px; /* Fixed width */
