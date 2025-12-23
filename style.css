@@ -292,7 +292,9 @@ header {
   Interactive states, custom controls, visual refinements
   ======================================================*/
 
-  
+  /*=====================
+    STATUS CIRCLES
+    ===================*/
 
 .status-circle {
     width: 20px;
