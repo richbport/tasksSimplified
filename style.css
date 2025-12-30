@@ -362,7 +362,9 @@ header {
     left: 0;
 }
 
-/* Priority colors */
+/* =====================
+   PRIORITY COLOR SYSTEM
+   ===================== */
 
 .extreme {
   color: #e74c3c;
