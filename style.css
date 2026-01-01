@@ -465,6 +465,10 @@ header {
   color: white;
 }
 
+/* =====================
+   MODAL STYLING
+   ===================== */
+
 .modal {
   display: none;
   position: fixed;
