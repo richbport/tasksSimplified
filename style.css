@@ -575,6 +575,10 @@ header {
   display: inline-block;
 }
 
+/* =====================
+   TEXT TRUNCATION
+   ===================== */
+
 .task-description {
   font-size: 14px;
   color: #aaa;
