@@ -511,6 +511,10 @@ header {
   cursor: pointer;
 }
 
+/* =====================
+   FORM ELEMENTS
+   ===================== */
+
 .form-group {
   margin-bottom: 20px;
 }
