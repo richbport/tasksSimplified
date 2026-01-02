@@ -581,7 +581,7 @@ header {
 }
 
 /* =====================
-   EMPLTY STATE
+   EMPTY STATE
    ===================== */
 
 .empty-state {
