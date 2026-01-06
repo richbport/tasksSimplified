@@ -337,6 +337,7 @@ function closeModal() {
 
 // 5.2.2: SAVING AND VALIDATING FORM DATA
 function saveTask() {
+  // Validate title
   if (!taskTitleInput.value.trim()) {
     alert("Please enter a task title");
     return;
