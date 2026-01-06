@@ -362,6 +362,7 @@ function saveTask() {
       date: taskDateInput.value,
       completed: false,
     };
+
     // Add to the beginning of the tasks array
     tasks.unshift(newTask);
 
@@ -391,6 +392,7 @@ function saveTask() {
 
 // 5.2.3: DELETE TASK FUNCTIONALITY
 function deleteTask(taskId) {
+  // Confirm deletion
   if (!confirm("Are you sure you want to delete this task?")) return;
 
   // Find the task index
