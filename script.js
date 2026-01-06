@@ -420,6 +420,7 @@ function searchTasks() {
   const searchTerm = searchInput.value.toLowerCase().trim();
 
   if (searchTerm === "") {
+    // Reset to show all tasks
     renderTasks();
     if (tasks.length > 0) {
       selectTask(tasks[0].id);
